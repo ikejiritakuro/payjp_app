@@ -1,4 +1,4 @@
-<%= link_to 'マイページへ行く' %>
+<%= link_to 'マイページへ行く', user_path(current_user) %>
 <div class="content">
   <% @items.each do |item| %>
     <p>商品名:<%= item.name %></p>
