@@ -2,6 +2,25 @@
   <div class="AccountPage__title">
     <h1>マイページ</h1>
   </div><br>
+   <div class="Card__title">
+    <h2>カード情報</h2>
+  </div>
+  <div class="Card_info">
+    【カード番号】
+    <br>
+    <%= "**** **** **** " + @card[:last4] %>
+    
+    <br>
+    【有効期限】
+    <br>
+    <%= @card[:exp_month] %>
+    
+    <%= @card[:exp_year] %>
+    
+  </div>
+  <div class="Account__info">
+    <h2>ユーザー情報</h2>
+  </div>
   <div class="Account__info">
     <h2>ユーザー情報</h2>
   </div>
